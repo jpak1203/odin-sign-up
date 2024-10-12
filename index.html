@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: Norse-Bold;
+            src:url("./fonts/norse-bold.otf");
+        }
+
+        .norse-bold{
+            font-family: Norse-Bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container" alt="Photo by Miguel Á. Padriñán: https://www.pexels.com/photo/defocused-image-of-lights-255379/">
+        <div class="logo-container">
+            <img src="./imgs/odin-lined.png" alt="The Oding Project Logo">
+            <h1 class="norse-bold">Odin</h1>
+        </div>
+        <p>Photo by <a href="https://www.pexels.com/@miguel-padrinan-1115696">Miguel Á. Padriñán</a> on <a href="https://www.pexels.com/">Pexels</a></p>
+    </div>
+    <div class="main-container">
+        <div class="info-container">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You know you <em>want</em> to.</p>
+        </div>
+        <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-fields">
+                    <h1>Let's do this!</h1>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input required type="text" id="first-name" name="first-name">
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input requiredtype="text" id="last-name" name="last-name">
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input minlength="10" type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input minlength="8" type="password" id="password" name="password" class="password">
+                    </div>
+                    <div>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input minlength="8" type="password" id="confirm-password" name="confirm-password" class="password">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">CREATE ACCOUNT</button>
+                </div>
+                <div class="login-container">
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
